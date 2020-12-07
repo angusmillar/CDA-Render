@@ -1,0 +1,2288 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3"  xmlns:ext="http://ns.electronichealth.net.au/Ci/Cda/Extensions/3.0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<realmCode code="AU" />
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+	<templateId root="1.2.36.1.2001.1001.101.100.1002.4" extension="3.4" />
+	<templateId root="1.2.36.1.2001.1001.100.149" extension="1.0" />
+	<id root="4bd7d7bb-33bd-45e6-a0bc-89a86356f965" />
+	<code code="18842-5" displayName="Discharge Summarization Note" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" />
+	<title>Discharge Summary</title>
+	<effectiveTime value="201911201159+1100" />
+	<confidentialityCode nullFlavor="NA" />
+	<languageCode code="en-AU" />
+	<setId root="bd807c59-e730-437e-be14-db7e675d60ec" />
+	<versionNumber value="1" />
+	<ext:completionCode code="F" displayName="Final" codeSystemName="NCTIS Document Status Values" codeSystem="1.2.36.1.2001.1001.101.104.20104" />
+	<recordTarget typeCode="RCT">
+		<patientRole classCode="PAT">
+			<id root="108dc2fc-e3bf-46b5-b743-1e6065fe2031" />
+			<addr nullFlavor="NA" />
+			<addr nullFlavor="NA" />
+			<patient>
+				<name>
+					<family>Derrington</family>
+				</name>
+				<name>
+					<family>Derrington</family>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.13.68" codeSystemName="AS 5017-2006 Health Care Client Identifier Sex" displayName="Male" />
+				<birthTime value="19330615" />
+				<ethnicGroupCode code="4" codeSystem="2.16.840.1.113883.3.879.291036" codeSystemName="METeOR Indigenous Status" displayName="Neither Aboriginal nor Torres Strait Islander origin" />
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.1.2001.1003.0.8003608000045922" assigningAuthorityName="IHI" />
+					<ext:assigningGeographicArea classCode="PLC">
+						<ext:name>National Identifier</ext:name>
+					</ext:assigningGeographicArea>
+				</ext:asEntityIdentifier>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.3.4" extension="123456" assigningAuthorityName="Croydon GP Centre" />
+					<ext:code code="MR" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+				</ext:asEntityIdentifier>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.1.5001.1.0.7" extension="29507907111" assigningAuthorityName="Individual Medicare Card Number" />
+					<ext:code code="MC" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+				</ext:asEntityIdentifier>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT">
+		<time value="20191125140000+1000" />
+		<assignedAuthor>
+			<id root="50681c75-2f9d-4945-a7e3-725d977f51fb" />
+			<code code="234611" codeSystem="2.16.840.1.113883.13.62" codeSystemName="1220.0 - ANZSCO - Australian and New Zealand Standard Classification of Occupations, First Edition, Revision 1" displayName="Medical Laboratory Scientist" />
+			<telecom value="tel:0345754566" use="WP" />
+			<telecom value="mailto:authen@globalauthens.com" use="WP" />
+			<assignedPerson>
+				<name>
+					<family>Doctor</family>
+					<given>Good</given>
+					<prefix>Doctor</prefix>
+				</name>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.1.2001.1003.0.8003615833334118" assigningAuthorityName="HPI-I" />
+					<ext:assigningGeographicArea classCode="PLC">
+						<ext:name>National Identifier</ext:name>
+					</ext:assigningGeographicArea>
+				</ext:asEntityIdentifier>
+				<ext:asEmployment classCode="EMP">
+					<ext:employerOrganization>
+						<id root="440159da-850c-4194-a57a-d2be120a46d8" />
+						<asOrganizationPartOf>
+							<wholeOrganization>
+								<name>ACME Pathology</name>
+								<ext:asEntityIdentifier classCode="IDENT">
+									<ext:id root="1.2.36.1.2001.1003.0.8003629900019338" assigningAuthorityName="HPI-O" />
+									<ext:assigningGeographicArea classCode="PLC">
+										<ext:name>National Identifier</ext:name>
+									</ext:assigningGeographicArea>
+								</ext:asEntityIdentifier>
+							</wholeOrganization>
+						</asOrganizationPartOf>
+					</ext:employerOrganization>
+				</ext:asEmployment>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="20f7f81f-9cee-42b6-998f-352ef793a56a" />
+				<name>ACME Pathology</name>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.1.2001.1007.1.8003640001000036" assigningAuthorityName="PAI-O" />
+					<ext:assigningGeographicArea classCode="PLC">
+						<ext:name>National Identifier</ext:name>
+					</ext:assigningGeographicArea>
+				</ext:asEntityIdentifier>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<intendedRecipient>
+			<id root="1.2.36.1.2001.1005.72.18082746852.10" extension="11672096" />
+			<addr use="WP">
+				<streetAddressLine>Guardian Medical Sanctuary Lakes</streetAddressLine>
+				<streetAddressLine>Shop 33</streetAddressLine>
+				<city>POINT COOK</city>
+				<state>VIC</state>
+				<postalCode>3030</postalCode>
+				<country>Australia</country>
+			</addr>
+			<telecom use="WP" value="tel:03 9395 6333" />
+			<informationRecipient>
+				<name>
+					<given>Jo-Ann Kay</given>
+					<family>Silva</family>
+				</name>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.174030967.0.2" extension="034295DW" assigningAuthorityName="Medicare Provider Number" />
+					<ext:code code="EI" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+				</ext:asEntityIdentifier>
+			</informationRecipient>
+		</intendedRecipient>
+	</informationRecipient>
+	<legalAuthenticator>
+		<time value="20191125140000+1000" />
+		<signatureCode code="S" />
+		<assignedEntity>
+			<id root="98e9dd4f-a1b4-4804-851a-f2574324d60f" />
+			<assignedPerson>
+				<name use="L">
+					<family>Doctor</family>
+					<given>Good</given>
+					<prefix>Doctor</prefix>
+				</name>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.1.2001.1003.0.8003615833334118" assigningAuthorityName="HPI-I" />
+					<ext:assigningGeographicArea classCode="PLC">
+						<ext:name>National Identifier</ext:name>
+					</ext:assigningGeographicArea>
+				</ext:asEntityIdentifier>
+			</assignedPerson>
+		</assignedEntity>
+	</legalAuthenticator>
+	<participant typeCode="PART">
+		<functionCode code="PCP" />
+		<associatedEntity classCode="PROV">
+			<id root="1.2.36.1.2001.1005.72.18082746852.10" extension="11672096" />
+			<code code="250000" codeSystem="2.16.840.1.113883.13.62" codeSystemName="1220.0 - ANZSCO - Australian and New Zealand Standard Classification of Occupations, First Edition, 2006" displayName="Health Professionals nfd" />
+			<addr use="WP">
+				<streetAddressLine>Guardian Medical Sanctuary Lakes</streetAddressLine>
+				<streetAddressLine>Shop 33</streetAddressLine>
+				<city>POINT COOK</city>
+				<state>VIC</state>
+				<postalCode>3030</postalCode>
+				<country>Australia</country>
+			</addr>
+			<telecom use="WP" value="tel:03 9395 6333" />
+			<associatedPerson>
+				<name>
+					<given>Jo-Ann Kay</given>
+					<family>Silva</family>
+				</name>
+				<ext:asEntityIdentifier classCode="IDENT">
+					<ext:id root="1.2.36.174030967.0.2" extension="034295DW" assigningAuthorityName="Medicare Provider Number" />
+					<ext:code code="EI" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+				</ext:asEntityIdentifier>
+			</associatedPerson>
+		</associatedEntity>
+	</participant>
+	<participant typeCode="ORG">
+		<associatedEntity classCode="SDLOC">
+			<id root="1.2.36.1.2001.1005.72.18082746852.14" extension="85759164" />
+			<code>
+				<originalText>F 2B</originalText>
+			</code>
+		</associatedEntity>
+	</participant>
+	<componentOf>
+		<encompassingEncounter>
+			<id root="1.2.36.1.2001.1005.72.18082746852.11" extension="IPE34813081" assigningAuthorityName="WHS Episode Number" />
+			<effectiveTime>
+				<low value="201911110947+1100" />
+			</effectiveTime>
+			<dischargeDispositionCode nullFlavor="NA" />
+			<encounterParticipant typeCode="DIS">
+				<time>
+					<low value="201911110947+1100" />
+				</time>
+				<assignedEntity>
+					<id root="1.2.36.1.2001.1005.72.18082746852.10" extension="11655034" />
+					<code code="250000" codeSystem="2.16.840.1.113883.13.62" codeSystemName="1220.0 - ANZSCO - Australian and New Zealand Standard Classification of Occupations, First Edition, 2006" displayName="Health Professionals nfd" />
+					<addr use="WP">
+						<streetAddressLine>Footscray Hospital</streetAddressLine>
+						<streetAddressLine>Gordon Street</streetAddressLine>
+						<city>Footscray</city>
+						<state>VIC</state>
+						<postalCode>3011</postalCode>
+						<country>Australia</country>
+					</addr>
+					<telecom use="WP" value="tel:03 8345 6666" />
+					<assignedPerson>
+						<name>
+							<given>Anne</given>
+							<family>Howard</family>
+						</name>
+						<ext:asEntityIdentifier classCode="IDENT">
+							<ext:id root="1.2.36.1.5001.1.0.7.2" extension="WHS2386" assigningAuthorityName="External Id" />
+							<ext:code code="EI" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+						</ext:asEntityIdentifier>
+						<ext:asEntityIdentifier classCode="IDENT">
+							<ext:id root="1.2.36.174030967.0.2" extension="032081CA" assigningAuthorityName="Medicare Provider Number" />
+							<ext:code code="EI" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+						</ext:asEntityIdentifier>
+						<ext:asEntityIdentifier classCode="IDENT">
+							<ext:id root="1.2.36.1.2001.1005.41.8003629900019338" extension="HOWARDAN" assigningAuthorityName="Western Health Millennium Username" />
+							<ext:code code="EI" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+						</ext:asEntityIdentifier>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<location>
+				<healthCareFacility>
+					<id root="1.2.36.1.2001.1005.72.18082746852.14" extension="85758822" />
+					<code code="HOSP" codeSystem="2.16.840.1.113883.1.11.17660" codeSystemName="HL7 ServiceDeliveryLocatonRoleType" displayName="Hospital" />
+					<serviceProviderOrganization>
+						<name>WHS Footscray Hospital</name>
+						<asOrganizationPartOf>
+							<id root="1.2.36.1.2001.1005.72.18082746852.17" extension="680563" />
+							<wholeOrganization>
+								<name>WHS Footscray Hospital</name>
+								<telecom use="WP" value="tel:83456666" />
+								<addr use="WP">
+									<streetAddressLine>160 Gordon street</streetAddressLine>
+									<streetAddressLine>Footscray</streetAddressLine>
+									<postalCode>3011</postalCode>
+									<country>Australia</country>
+								</addr>
+								<ext:asEntityIdentifier classCode="IDENT">
+									<ext:id root="1.2.36.1.2001.1003.0.8003629900019338" assigningAuthorityName="HPI-O" />
+									<ext:assigningGeographicArea classCode="PLC">
+										<ext:name>National Identifier</ext:name>
+									</ext:assigningGeographicArea>
+								</ext:asEntityIdentifier>
+							</wholeOrganization>
+						</asOrganizationPartOf>
+					</serviceProviderOrganization>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+	</componentOf>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<code code="101.16011" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Health Profile" />
+					<title>Health Profile</title>
+					<text>
+						<paragraph>
+							<content />
+						</paragraph>
+					</text>
+					<component>
+						<section>
+							<code code="101.20113" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Adverse Reactions" />
+							<title>Adverse Reactions</title>
+							<text>
+								<table border="1" width="100%">
+									<caption>Adverse Reactions</caption>
+									<thead>
+										<tr>
+											<th>Substance</th>
+											<th>Category</th>
+											<th>Reaction Type</th>
+											<th>Severity</th>
+											<th>Manifestation</th>
+											<th>Estimated Onset</th>
+											<th>Comments</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Advil Rapid Release</td>
+											<td>Drug</td>
+											<td>Allergy</td>
+											<td>Mild</td>
+											<td>Abdominal pain</td>
+											<td />
+											<td />
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<entry typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.15" extension="8326352" />
+									<code code="102.15517" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Adverse Reaction" />
+									<value xsi:type="CD" code="419076005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Allergic reaction">
+										<originalText>Allergy</originalText>
+									</value>
+									<participant typeCode="CAGNT">
+										<participantRole>
+											<playingEntity>
+												<code code="37996813" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id" codeSystemVersion="121" displayName="Advil Rapid Release">
+													<originalText>Advil Rapid Release</originalText>
+													<translation code="1205951000168109" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Advil Rapid Release" />
+												</code>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<entryRelationship inversionInd="true" typeCode="MFST">
+										<observation classCode="OBS" moodCode="EVN">
+											<code>
+												<originalText>Abdominal pain</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entry>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<id root="FD75692E-0B30-11EA-8009-FA3948489A59" />
+					<code code="102.16080" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Administrative Observations" />
+					<title>Administrative Observations</title>
+					<text>
+						<table>
+							<tbody>
+								<tr>
+									<th>Age</th>
+									<td>72 Years</td>
+								</tr>
+								<tr>
+									<th>Date of Birth Accuracy Indicator</th>
+									<td>Actual</td>
+								</tr>
+								<tr>
+									<th>Age Accuracy Indicator</th>
+									<td>True</td>
+								</tr>
+								<tr>
+									<th>Birth Plurality</th>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<id root="FD759F98-0B30-11EA-8009-FA3948489A59" />
+							<code code="102.16234" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Date of Birth Accuracy Indicator" />
+							<value xsi:type="CS" code="AAA" />
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<id root="FD75C158-0B30-11EA-8009-FA3948489A59" />
+							<code code="103.20109" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Age" />
+							<value xsi:type="PQ" value="72" unit="a" />
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<id root="FD75D5C6-0B30-11EA-8009-FA3948489A59" />
+							<code code="103.16233" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Date of Birth is Calculated From Age" />
+							<value xsi:type="BL" value="false" />
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<id root="FD75EB4C-0B30-11EA-8009-FA3948489A59" />
+							<code code="103.16279" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Age Accuracy Indicator" />
+							<value xsi:type="BL" value="true" />
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<id root="FD7607BC-0B30-11EA-8009-FA3948489A59" />
+							<code code="103.16249" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Birth Plurality" />
+							<value xsi:type="INT" value="1" />
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<id root="FD761FC2-0B30-11EA-8009-FA3948489A59" />
+							<code code="103.16028" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Specialty" />
+							<value xsi:type="CD" code="CD:86503871" codeSystem="1.2.36.1.2001.1005.72.18082746852.34" displayName="Gen Intl Med FH A" />
+						</observation>
+					</entry>
+					<ext:coverage2 typeCode="COVBY">
+						<ext:entitlement classCode="COV" moodCode="EVN">
+							<ext:id root="1.2.36.1.5001.1.0.7" extension="69513352211" assigningAuthorityName="Australian Medicare number" />
+							<ext:code code="1" codeSystem="1.2.36.1.2001.1001.101.104.16047" codeSystemName="NCTIS Entitlement Type Values" displayName="Medicare Benefits">
+								<originalText>Medicare Benefits</originalText>
+							</ext:code>
+							<ext:participant typeCode="BEN">
+								<ext:participantRole classCode="PAT">
+									<ext:id root="1.2.36.1.2001.1005.72.18082746852.10" extension="12015133" />
+								</ext:participantRole>
+							</ext:participant>
+						</ext:entitlement>
+					</ext:coverage2>
+				</section>
+			</component>
+			<component>
+				<section>
+					<code code="101.16006" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Event" />
+					<title>Event</title>
+					<text>
+						<paragraph>
+							<content />
+						</paragraph>
+					</text>
+					<component>
+						<section>
+							<code code="101.16142" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Problems/Diagnoses This Visit" />
+							<title>Problems/Diagnoses This Visit</title>
+							<text>
+								<table border="1" width="100%">
+									<caption>Problems/Diagnosis</caption>
+									<thead>
+										<tr>
+											<th>Diagnosis</th>
+											<th>Type</th>
+											<th>Onset Date</th>
+											<th>Status</th>
+											<th>Comment</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Ménière&apos;s disease</td>
+											<td>Principal Dx</td>
+											<td>20 Nov 2019</td>
+											<td>Final</td>
+											<td />
+										</tr>
+										<tr>
+											<td>TESTING DISPLAY ASS PRINCIPAL</td>
+											<td>Principal Dx</td>
+											<td>11 Nov 2019</td>
+											<td>Final</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Postprocedural ureteric obstruction</td>
+											<td>Additional Dx</td>
+											<td>18 Nov 2019</td>
+											<td>Final</td>
+											<td />
+										</tr>
+										<tr>
+											<td>TESTING DISPLAY AS</td>
+											<td>Additional Dx</td>
+											<td>11 Nov 2019</td>
+											<td>Final</td>
+											<td />
+										</tr>
+										<tr>
+											<td>TESTING DISPLAY AS COMPLICATION</td>
+											<td>Complication</td>
+											<td>11 Nov 2019</td>
+											<td>Final</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="6FCF73E7-4C7A-4F8A-A2BD-B58A01651869" extension="107499530" />
+									<code code="406525006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Suggested billing diagnosis">
+										<originalText>Principal Dx</originalText>
+									</code>
+									<value xsi:type="CD" code="13445001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Ménière&apos;s disease">
+										<originalText>Ménière&apos;s disease</originalText>
+									</value>
+								</observation>
+							</entry>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="C0279105-FA15-4A95-B9B7-829EAFCF26EC" extension="107499337" />
+									<code code="406525006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Suggested billing diagnosis">
+										<originalText>Principal Dx</originalText>
+									</code>
+									<value xsi:type="CD" code="49436004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Atrial fibrillation">
+										<originalText>TESTING DISPLAY ASS PRINCIPAL</originalText>
+									</value>
+								</observation>
+							</entry>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="CD803209-DA3C-48C0-931A-96FA891DAD24" extension="107499502" />
+									<code code="406520001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Pre-op diagnosis">
+										<originalText>Additional Dx</originalText>
+									</code>
+									<value xsi:type="CD" code="197805009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Postoperative ureteric constriction">
+										<originalText>Postprocedural ureteric obstruction</originalText>
+									</value>
+								</observation>
+							</entry>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="94E5CE7D-C2B9-43A7-AF28-CF6A3D9283E1" extension="107499336" />
+									<code code="406520001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Pre-op diagnosis">
+										<originalText>Additional Dx</originalText>
+									</code>
+									<value xsi:type="CD" code="443343001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Acute diastolic heart failure">
+										<originalText>TESTING DISPLAY AS</originalText>
+									</value>
+								</observation>
+							</entry>
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<id root="58EF51AC-86EF-403A-91FE-BFC5DA893703" extension="107499338" />
+									<code code="52870002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Admitting diagnosis">
+										<originalText>Complication</originalText>
+									</code>
+									<value xsi:type="CD" code="21522001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Abdominal pain">
+										<originalText>TESTING DISPLAY AS COMPLICATION</originalText>
+									</value>
+								</observation>
+							</entry>
+						</section>
+					</component>
+					<component>
+						<section>
+							<code code="101.20109" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Clinical Interventions Performed This Visit" />
+							<title>Clinical Interventions Performed This Visit</title>
+							<text>
+								<table border="1" width="100%">
+									<caption>Clinical Interventions Performed This Visit</caption>
+									<thead>
+										<tr>
+											<th>Procedure</th>
+											<th>Performed On</th>
+											<th>Clinical Service</th>
+											<th>Location</th>
+											<th>Anesthesia Type</th>
+											<th>Anesthesia Minute</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Shin X-ray</td>
+											<td>07 Oct 2016 00:00+1100</td>
+											<td />
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Fracture - traction</td>
+											<td>18 Oct 1999 00:00+1000</td>
+											<td />
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>TESTING DISPLAY AS PROCEDURE</td>
+											<td />
+											<td>Non-Specified</td>
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Fracture - traction</td>
+											<td />
+											<td>Non-Specified</td>
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Pelvic muscle exercises</td>
+											<td />
+											<td>Non-Specified</td>
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Procedure for abdominal wall lesion</td>
+											<td />
+											<td>Non-Specified</td>
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Tactile awareness work</td>
+											<td />
+											<td>Non-Specified</td>
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Trachea manipulation</td>
+											<td />
+											<td>Non-Specified</td>
+											<td />
+											<td />
+											<td>0</td>
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="107498643.0" />
+									<code>
+										<originalText>Shin X-ray</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="106639458.0" />
+									<code>
+										<originalText>Fracture - traction</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="107499339.0" />
+									<code>
+										<originalText>TESTING DISPLAY AS PROCEDURE</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="107498600.0" />
+									<code>
+										<originalText>Fracture - traction</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="106639455.0" />
+									<code>
+										<originalText>Pelvic muscle exercises</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="107498628.0" />
+									<code>
+										<originalText>Procedure for abdominal wall lesion</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="107498609.0" />
+									<code>
+										<originalText>Tactile awareness work</originalText>
+									</code>
+								</procedure>
+							</entry>
+							<entry typeCode="COMP">
+								<procedure classCode="PROC" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.20" extension="107498606.0" />
+									<code>
+										<originalText>Trachea manipulation</originalText>
+									</code>
+								</procedure>
+							</entry>
+						</section>
+					</component>
+					<component>
+						<section>
+							<code code="102.15513.4.1.1" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Clinical Synopsis" />
+							<title>Clinical Synopsis</title>
+							<text>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Hospital Course</content>
+										</content>
+										<content>
+											<br />
+											<content>
+												<br />
+												<content styleCode="xFgColour000000">
+													<br />
+													<content>
+														<br />
+														<content />
+														<content>
+															<br />Ménière&apos;s disease</content>
+													</content>
+												</content>
+											</content>
+										</content>
+										<content>
+											<br />
+											<br />
+											<content>Patient presented with xxxxxx</content>
+											<br />
+											<content>Admitted from ____ to _____</content>
+											<br />
+											<content>Was given IV xxxx and antiemetics</content>
+											<br />
+											<content>Seen by PT/OT</content>
+											<br />
+											<content>Discharged home with GP review</content>
+											<br />
+											<content/>
+										</content>
+									</content>
+								</paragraph>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Results Review</content>
+										</content>
+										<content>
+											<br />
+											<content styleCode="Bold Underline">Pathology Results</content>
+											<content />
+											<content>
+												<br />pathology results freetext box</content>
+										</content>
+										<content>
+											<br />
+											<content>
+												<content styleCode="Bold Underline">Pathology Reports</content>
+											</content>
+											<content>
+												<br />patholog report free text box</content>
+										</content>
+										<content>
+											<br />
+											<content styleCode="Bold Underline">Radiology Reports</content>
+											<content>
+												<br />radiology reports free text box</content>
+										</content>
+										<content>
+											<br />
+											<content>
+												<content styleCode="Bold Underline">Other Investigations</content>
+											</content>
+											<content>
+												<br />other investigations free text box</content>
+										</content>
+										<content>
+											<br />freetext results review box</content>
+									</content>
+								</paragraph>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Warfarin Treatment</content>
+										</content>
+										<content>
+											<br />
+											<content styleCode="xFgColour000000 xFontSizePx12">
+												<content styleCode="xFontSizePx9">No qualifying data available.</content>
+											</content>
+										</content>
+										<content>
+											<br />
+											<content>Treatment Indication: _</content>
+											<br />
+											<content>Expected Treatment Duration: _</content>
+											<br />
+											<content>Planned Next INR: _</content>
+											<br />
+											<content>Responsible for next INR: _</content>
+											<br />
+											<content>Target Low INR: _</content>
+											<br />
+											<content>Target High INR: _</content>
+										</content>
+									</content>
+								</paragraph>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Past Medical History</content>
+										</content>
+										<content>
+											<br />
+											<content>
+												<br />
+												<content styleCode="Underline">Ongoing</content>
+												<content>
+													<br />Asthma - currently active</content>
+												<content>
+													<br />Fetal heart failure</content>
+												<content>
+													<br />Infectious Risk - Diarrhoea</content>
+												<content>
+													<br />Medical - Past Transfusion Problem</content>
+											</content>
+											<content>
+												<br />
+												<content styleCode="Underline">Historical</content>
+												<content>
+													<br />CKD stage 3 Cr 100-120</content>
+												<content>
+													<br />Dyslipidaemia</content>
+												<content>
+													<br />Hypertension</content>
+												<content>
+													<br />Pelvic and perineal pain</content>
+												<content>
+													<br />T2DM - Type 2 diabetes mellitus</content>
+											</content>
+										</content>
+									</content>
+								</paragraph>
+							</text>
+							<entry typeCode="DRIV">
+								<act classCode="ACT" moodCode="EVN">
+									<id root="FE74D242-0B30-11EA-8009-FA3948489A59" />
+									<code code="103.15582" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Clinical Synopsis Description" />
+									<text xsi:type="ST">Hospital Course Ménière&apos;s disease	Patient presented with xxxxxx	Admitted from ____ to _____	Was given IV xxxx and antiemetics	Seen by PT/OT	Discharged home with GP review Results Review  Pathology Results pathology results freetext box  Pathology Reports patholog report free text box  Radiology Reports radiology reports free text box  Other Investigations other investigations free text box  freetext results review boxWarfarin Treatment  No qualifying data available.  Treatment Indication: _	Expected Treatment Duration: _	Planned Next INR: _	Responsible for next INR: _	Target Low INR: _	Target High INR: _Past Medical History Ongoing Asthma - currently active Fetal heart failure Infectious Risk - Diarrhoea Medical - Past Transfusion Problem Historical CKD stage 3 Cr 100-120 Dyslipidaemia Hypertension Pelvic and perineal pain T2DM - Type 2 diabetes mellitus</text>
+								</act>
+							</entry>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<code code="101.16022" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Medications" />
+					<title>Medications</title>
+					<text>
+						<paragraph>
+							<content />
+						</paragraph>
+					</text>
+					<component>
+						<section>
+							<code code="101.16146.4.1.1" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Current Medications On Discharge" />
+							<title>Current Medications On Discharge</title>
+							<text>
+								<table border="1" width="100%">
+									<caption>Current Medications On Discharge</caption>
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>amlodipine-valsartan 5 mg-160 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily</td>
+											<td>Oral</td>
+											<td>Prescribed</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Start Date</td>
+											<td>29 Oct 2019</td>
+										</tr>
+										<tr>
+											<td>Expiry Date</td>
+											<td>29 Oct 2020</td>
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Breo Ellipta 100/25 inhalation powder</td>
+											<td>1        inhalation(s)</td>
+											<td>daily</td>
+											<td>Inhalation</td>
+											<td>Prescribed</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Instructions</td>
+											<td>1 inhalation(s) daily. Rinse mouth with water after each use.</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Start Date</td>
+											<td>12 Nov 2019</td>
+										</tr>
+										<tr>
+											<td>Expiry Date</td>
+											<td>12 Nov 2020</td>
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>moxonidine 400 mcg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily in the morning</td>
+											<td>Oral</td>
+											<td>Prescribed</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily in the morning</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Start Date</td>
+											<td>09 May 2019</td>
+										</tr>
+										<tr>
+											<td>Expiry Date</td>
+											<td>09 May 2020</td>
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>valsartan 80 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily</td>
+											<td>Oral</td>
+											<td>Prescribed</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Start Date</td>
+											<td>20 Nov 2019</td>
+										</tr>
+										<tr>
+											<td>Expiry Date</td>
+											<td>20 Nov 2020</td>
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643076494" />
+									<text xsi:type="ST">1 tab(s) daily</text>
+									<statusCode code="active" />
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201910291403+1100" />
+									</effectiveTime>
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="107988" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="amlodipine-valsartan 5 mg-160 mg oral tablet">
+													<originalText>amlodipine-valsartan 5 mg-160 mg oral tablet</originalText>
+													<translation code="61898011000036106" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="amlodipine 5 mg + valsartan 160 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="FF2FB198-0B30-11EA-8009-FA3948489A59" />
+											<code code="105681000036100" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Prescribed">
+												<originalText>Prescribed</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="647559981" />
+									<text xsi:type="ST">1 inhalation(s) daily. Rinse mouth with water after each use.</text>
+									<statusCode code="active" />
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201911120913+1100" />
+									</effectiveTime>
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="231199" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="Breo Ellipta 100/25 inhalation powder">
+													<originalText>Breo Ellipta 100/25 inhalation powder</originalText>
+													<translation code="677551000168103" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Breo Ellipta 100/25 powder for inhalation, actuation" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="FF4387B8-0B30-11EA-8009-FA3948489A59" />
+											<code code="105681000036100" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Prescribed">
+												<originalText>Prescribed</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="591855198" />
+									<text xsi:type="ST">1 tab(s) daily in the morning</text>
+									<statusCode code="active" />
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201905091708+1000" />
+									</effectiveTime>
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="50733" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="moxonidine 400 mcg oral tablet">
+													<originalText>moxonidine 400 mcg oral tablet</originalText>
+													<translation code="22060011000036103" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="moxonidine 400 microgram tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="FFAD6642-0B30-11EA-8009-FA3948489A59" />
+											<code code="105681000036100" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Prescribed">
+												<originalText>Prescribed</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="650195726" />
+									<text xsi:type="ST">1 tab(s) daily</text>
+									<statusCode code="active" />
+									<effectiveTime xsi:type="IVL_TS">
+										<low value="201911201155+1100" />
+									</effectiveTime>
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="42592" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="valsartan 80 mg oral tablet">
+													<originalText>valsartan 80 mg oral tablet</originalText>
+													<translation code="62078011000036100" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="valsartan 80 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="FFDA20D8-0B30-11EA-8009-FA3948489A59" />
+											<code code="105681000036100" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Prescribed">
+												<originalText>Prescribed</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+						</section>
+					</component>
+					<component>
+						<section>
+							<code code="101.16146.4.1.2" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Ceased Medications" />
+							<title>Ceased Medications</title>
+							<text>
+								<table border="1" width="100%">
+									<caption>Ceased Medications</caption>
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>alprazolam 2 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>every 6 hours</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>Adverse Drug Event</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) every 6 hours</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>amLODIPine 5 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>No Longer Necessary</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>amLODIPine 5 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>No Longer Necessary</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>atenolol 50 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily in the morning</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>No Longer Necessary</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily in the morning</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Atacand Plus 32 mg-12.5 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily in the morning</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>Not Documented</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily in the morning</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>perindopril arginine-indapamide 5 mg-1.25 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily in the morning</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>No Longer Necessary</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily in the morning</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>pizotifen 0.5 mg oral tablet</td>
+											<td>3        tab(s)</td>
+											<td>daily at night</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>No Longer Necessary</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>3 tab(s) daily at night</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>ranitidine 15 mg/mL oral liquid</td>
+											<td>10        mL</td>
+											<td>TWICE a day</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>No Longer Necessary</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>10 mL TWICE a day</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<thead>
+										<tr>
+											<th>Medication</th>
+											<th>Dose</th>
+											<th>Frequency</th>
+											<th>Route</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>simvastatin 5 mg oral tablet</td>
+											<td>1        tab(s)</td>
+											<td>daily in the evening</td>
+											<td>Oral</td>
+											<td>Ceased</td>
+										</tr>
+									</tbody>
+								</table>
+								<table border="1" width="100%">
+									<tbody>
+										<tr>
+											<td>Discontinue Reason</td>
+											<td>Not Documented</td>
+										</tr>
+										<tr>
+											<td>Instructions</td>
+											<td>1 tab(s) daily in the evening</td>
+										</tr>
+										<tr>
+											<td>Duration</td>
+											<td />
+										</tr>
+										<tr>
+											<td>PRN</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Repeats</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>Other Details</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Comments</td>
+											<td />
+										</tr>
+										<tr>
+											<td>Brand Substitution Allowed</td>
+											<td>Yes</td>
+										</tr>
+										<tr>
+											<td>Reason For Drug</td>
+											<td />
+										</tr>
+									</tbody>
+								</table>
+							</text>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643360590" />
+									<text xsi:type="ST">1 tab(s) every 6 hours</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="17709" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="alprazolam 2 mg oral tablet">
+													<originalText>alprazolam 2 mg oral tablet</originalText>
+													<translation code="23597011000036107" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="alprazolam 2 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="008BF27C-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="008C13CE-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="008C226A-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">Adverse Drug Event</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643037479" />
+									<text xsi:type="ST">1 tab(s) daily</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="17710" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="amLODIPine 5 mg oral tablet">
+													<originalText>amLODIPine 5 mg oral tablet</originalText>
+													<translation code="23517011000036108" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="amlodipine 5 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="00A8ACF0-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="00A8BD44-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="00A8CA14-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">No Longer Necessary</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643360591" />
+									<text xsi:type="ST">1 tab(s) daily</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="17710" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="amLODIPine 5 mg oral tablet">
+													<originalText>amLODIPine 5 mg oral tablet</originalText>
+													<translation code="23517011000036108" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="amlodipine 5 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="00ABAFC2-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="00ABC0E8-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="00ABCE58-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">No Longer Necessary</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643360592" />
+									<text xsi:type="ST">1 tab(s) daily in the morning</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="17101" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="atenolol 50 mg oral tablet">
+													<originalText>atenolol 50 mg oral tablet</originalText>
+													<translation code="23168011000036101" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="atenolol 50 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="011BD3CE-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="011BE29C-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="011BEE54-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">No Longer Necessary</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="591839279" />
+									<text xsi:type="ST">1 tab(s) daily in the morning</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="171594" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="Atacand Plus 32 mg-12.5 mg oral tablet">
+													<originalText>Atacand Plus 32 mg-12.5 mg oral tablet</originalText>
+													<translation code="83252011000036104" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="Atacand Plus 32/12.5 tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="015304DE-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="0153133E-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="01531EB0-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">Not Documented</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643037483" />
+									<text xsi:type="ST">1 tab(s) daily in the morning</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="133087" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="perindopril arginine-indapamide 5 mg-1.25 mg oral tablet">
+													<originalText>perindopril arginine-indapamide 5 mg-1.25 mg oral tablet</originalText>
+													<translation code="22154011000036108" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="perindopril arginine 5 mg + indapamide hemihydrate 1.25 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="0172E290-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="0172F0FA-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="0172FC6C-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">No Longer Necessary</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643360594" />
+									<text xsi:type="ST">3 tab(s) daily at night</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="38734" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="pizotifen 0.5 mg oral tablet">
+													<originalText>pizotifen 0.5 mg oral tablet</originalText>
+													<translation code="23002011000036105" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="pizotifen 500 microgram tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="01AE8016-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="01AE8ED0-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="01AE9A38-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">No Longer Necessary</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643360595" />
+									<text xsi:type="ST">10 mL TWICE a day</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="19529" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="ranitidine 150 mg/10 mL oral solution">
+													<originalText>ranitidine 15 mg/mL oral liquid</originalText>
+													<translation code="22429011000036109" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="ranitidine 150 mg/10 mL oral liquid" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="01D11F4A-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="01D12DAA-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="01D13A84-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">No Longer Necessary</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+							<entry>
+								<substanceAdministration classCode="SBADM" moodCode="EVN">
+									<id root="1.2.36.1.2001.1005.72.18082746852.19" extension="643037488" />
+									<text xsi:type="ST">1 tab(s) daily in the evening</text>
+									<statusCode code="cancelled" />
+									<consumable>
+										<manufacturedProduct>
+											<manufacturedMaterial>
+												<code code="18497" codeSystem="2.16.840.1.113883.6.27" codeSystemName="MULTUM" displayName="simvastatin 5 mg oral tablet">
+													<originalText>simvastatin 5 mg oral tablet</originalText>
+													<translation code="23522011000036101" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" codeSystemVersion="http://snomed.info/sct/32506021000036107/version/20190831" displayName="simvastatin 5 mg tablet" />
+												</code>
+											</manufacturedMaterial>
+										</manufacturedProduct>
+									</consumable>
+									<entryRelationship inversionInd="true" typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="01F09D98-0B31-11EA-8009-FA3948489A59" />
+											<code code="385656004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ceased">
+												<originalText>Ceased</originalText>
+											</code>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SPRT">
+										<observation classCode="OBS" moodCode="EVN">
+											<id root="01F0ACE8-0B31-11EA-8009-FA3948489A59" />
+											<code code="703465008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Change made">
+												<originalText>Change made</originalText>
+											</code>
+											<entryRelationship typeCode="RSON">
+												<act classCode="INFRM" moodCode="EVN">
+													<id root="01F0B8B4-0B31-11EA-8009-FA3948489A59" />
+													<code code="103.10177" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Reason for Change" />
+													<text xsi:type="ST">Not Documented</text>
+												</act>
+											</entryRelationship>
+										</observation>
+									</entryRelationship>
+								</substanceAdministration>
+							</entry>
+						</section>
+					</component>
+				</section>
+			</component>
+			<component>
+				<section>
+					<code code="101.16020" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Plan" />
+					<title>Plan</title>
+					<text>
+						<paragraph>
+							<content />
+						</paragraph>
+					</text>
+					<component>
+						<section>
+							<code code="101.20016" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Record of Recommendations and Information Provided" />
+							<title>Record of Recommendations and Information Provided</title>
+							<text>
+								<content styleCode="Bold Italics">Recommendations</content>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Home Medication Changes and Rationale</content>
+										</content>
+										<content>
+											<br />home meds changes freetext box</content>
+									</content>
+								</paragraph>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Additional Recipients and Follow-up</content>
+										</content>
+										<content>
+											<br />
+											<content>
+												<br />
+												<content>
+													<br />
+													<content styleCode="Bold">Follow Up with</content>
+													<content>  Follow up with GP</content>
+													<br />
+													<content/>
+													<content>
+														<br />
+														<content styleCode="Bold">When:</content>
+														<content styleCode="Bold">
+															<br />
+															<content />
+														</content>
+														<content styleCode="Bold">
+															<br />
+															<content />
+														</content>
+													</content>
+												</content>
+											</content>
+										</content>
+										<content>
+											<br />additional recipients freetext box test</content>
+									</content>
+								</paragraph>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Requested Appointments</content>
+										</content>
+										<content>
+											<br />appointements box free text test</content>
+									</content>
+								</paragraph>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Patient Discharge Instructions</content>
+										</content>
+										<content>
+											<br />
+											<content>
+												<br />
+												<content styleCode="xFgColour000000">
+													<br />
+													<content>
+														<br />
+														<content />
+														<content>
+															<br />Ménière&apos;s disease</content>
+													</content>
+												</content>
+											</content>
+										</content>
+										<content>
+											<br />freetext test Ménière&apos;s disease</content>
+									</content>
+								</paragraph>
+								<content styleCode="Bold Italics">Information Provided</content>
+								<paragraph>
+									<content>
+										<br />
+										<content>
+											<content styleCode="Bold Underline">Patient Education</content>
+										</content>
+										<br />
+										<content/>
+										<content>
+											<br />freetext box for typing test test</content>
+									</content>
+								</paragraph>
+							</text>
+							<entry>
+								<act classCode="INFRM" moodCode="PRP">
+									<id root="0201E454-0B31-11EA-8009-FA3948489A59" />
+									<code code="102.20016.4.1.1" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Recommendations Provided" />
+									<text xsi:type="ST">Home Medication Changes and Rationale  home meds changes freetext boxAdditional Recipients and Follow-up Follow Up with   Follow up with GP When:  additional recipients freetext box testRequested Appointments  appointements box free text testPatient Discharge Instructions MÃ©niÃ¨re's disease  freetext test MÃ©niÃ¨re's disease</text>
+									<performer typeCode="PRF">
+										<assignedEntity>
+											<id root="1.2.36.1.2001.1005.72.18082746852.10" extension="11672096" />
+											<code code="250000" codeSystem="2.16.840.1.113883.13.62" codeSystemName="1220.0 - ANZSCO - Australian and New Zealand Standard Classification of Occupations, First Edition, 2006" displayName="Health Professionals nfd" />
+											<addr use="WP">
+												<streetAddressLine>Guardian Medical Sanctuary Lakes</streetAddressLine>
+												<streetAddressLine>Shop 33</streetAddressLine>
+												<city>POINT COOK</city>
+												<state>VIC</state>
+												<postalCode>3030</postalCode>
+												<country>Australia</country>
+											</addr>
+											<telecom use="WP" value="tel:03 9395 6333" />
+											<assignedPerson>
+												<name>
+													<given>Jo-Ann Kay</given>
+													<family>Silva</family>
+												</name>
+												<ext:asEntityIdentifier classCode="IDENT">
+													<ext:id root="1.2.36.174030967.0.2" extension="034295DW" assigningAuthorityName="Medicare Provider Number" />
+													<ext:code code="EI" codeSystem="2.16.840.1.113883.12.203" codeSystemName="Identifier Type (HL7)" />
+												</ext:asEntityIdentifier>
+											</assignedPerson>
+										</assignedEntity>
+									</performer>
+								</act>
+							</entry>
+							<entry>
+								<act classCode="INFRM" moodCode="EVN">
+									<id root="0238DA90-0B31-11EA-8009-FA3948489A59" />
+									<code code="102.20016.4.1.2" codeSystem="1.2.36.1.2001.1001.101" codeSystemName="NCTIS Data Components" displayName="Information Provided" />
+									<text xsi:type="ST">Patient Education  freetext box for typing test test</text>
+								</act>
+							</entry>
+						</section>
+					</component>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
